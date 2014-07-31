@@ -5,7 +5,11 @@ class HelloController < ApplicationController
     render text: 'hello world'
   end 
  
- def view
+  def view
     @msg = 'hello world'
- end
+  end
+
+  def list
+    @books = Book.all
+  end
 end
