@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140731085653) do
+ActiveRecord::Schema.define(version: 20140801022224) do
 
   create_table "authors", force: true do |t|
     t.integer  "user_id"
@@ -38,6 +38,11 @@ ActiveRecord::Schema.define(version: 20140731085653) do
     t.string   "publish"
     t.date     "published"
     t.boolean  "cd"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "callbacks", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
